@@ -1154,7 +1154,7 @@ footer a {
   <div class="about-grid">
     <div class="about-text reveal reveal-delay-1">
       <p>
-        Hi, I'm Rindang — a second-year Informatics student at Politeknik Elektronika Negeri Surabaya (PENS), 
+        Hi, I'm Rindang — a third-year Informatics student at Politeknik Elektronika Negeri Surabaya (PENS), 
         passionate about the intersection of technology, people, and process.
       </p>
       <p>
@@ -1200,7 +1200,7 @@ footer a {
       <div class="timeline-dot"><i class="fa fa-person"></i></div>
       <div class="timeline-body">
         <div class="timeline-period">2026 — Present</div>
-        <div class="timeline-role">Scrum Master</div>
+        <div class="timeline-role">Backend Developer & Scrum Master</div>
         <div class="timeline-org">BudgEx — Agile Product Development</div>
         <div class="timeline-desc">
           Leading team planning and execution of technology projects within the campus community. 
@@ -1356,6 +1356,27 @@ footer a {
         </div>
       </div>
 
+      <div class="project-card" onclick="openDetail(4)">
+        <div class="project-thumb thumb-5">
+          <img src="assets/images/mymovies.png" alt="MyMovies — Movie List App">
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Flutter</span>
+            <span class="project-tag">Dart</span>
+            <span class="project-tag">Mobile App</span>
+          </div>
+          <div class="project-title">MyMovies — Movie List App</div>
+          <div class="project-desc">
+            Aplikasi mobile untuk melihat daftar dan jadwal film bioskop terkini dengan antarmuka yang terinspirasi dari m.tix.
+          </div>
+          <div class="project-footer">
+            <div class="project-impact"><i class="fa fa-bolt"></i> Akses info film lebih cepat</div>
+            <button class="project-detail-btn">Details <i class="fa fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
       <div class="project-card" style="opacity:0.6; cursor:default;" onclick="event.stopPropagation()">
         <div class="project-thumb thumb-6" style="opacity:0.7;">
           <i class="fa fa-circle-notch fa-spin project-thumb-icon" style="color:var(--navy); opacity:0.4;"></i>
@@ -1455,6 +1476,27 @@ footer a {
           </div>
           <div class="project-footer">
             <div class="project-impact"><i class="fa fa-bolt"></i> Visibilitas distribusi pegawai lebih baik</div>
+            <button class="project-detail-btn">Details <i class="fa fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" onclick="openDetail(4)" aria-hidden="true">
+        <div class="project-thumb thumb-5">
+          <img src="assets/images/mymovies.png" alt="MyMovies — Movie List App">
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Flutter</span>
+            <span class="project-tag">Dart</span>
+            <span class="project-tag">Mobile App</span>
+          </div>
+          <div class="project-title">MyMovies — Movie List App</div>
+          <div class="project-desc">
+            Aplikasi mobile untuk melihat daftar dan jadwal film bioskop terkini dengan antarmuka yang terinspirasi dari m.tix.
+          </div>
+          <div class="project-footer">
+            <div class="project-impact"><i class="fa fa-bolt"></i> Akses info film lebih cepat</div>
             <button class="project-detail-btn">Details <i class="fa fa-arrow-right"></i></button>
           </div>
         </div>
@@ -1625,6 +1667,19 @@ footer a {
         </div>
         <div class="modal-project-role">Fullstack Developer</div>
       </div>
+      <div class="modal-project-item">
+        <div class="modal-project-num">05</div>
+        <div class="modal-project-info">
+          <div class="modal-project-title">MyMovies — Movie List App</div>
+          <div class="modal-project-desc">Aplikasi mobile berbasis Flutter untuk melihat daftar film dan jadwal tayang bioskop ala m.tix.</div>
+          <div class="modal-project-tags">
+            <span class="modal-project-tag">Flutter</span>
+            <span class="modal-project-tag">Dart</span>
+            <span class="modal-project-tag">Mobile App</span>
+          </div>
+        </div>
+        <div class="modal-project-role">Mobile Developer</div>
+      </div>
     </div>
   </div>
 </div>
@@ -1748,6 +1803,20 @@ const projects = [
     stack: ['Laravel', 'Blade', 'MySQL'],
     challenge: 'Relasi database kompleks dengan pegawai medis yang memiliki banyak status jadwal atau spesialisasi dipecahkan lewat normalisasi dan skema relasional efisien agar kueri tetap cepat.',
     impact: 'Menyederhanakan proses pencarian data SDM, mengurangi waktu pelaporan manajerial secara signifikan, dan memberikan visibilitas penuh terhadap distribusi pegawai.'
+  }
+  ,
+  {
+    title: 'MyMovies — Movie List App',
+    role: 'Mobile Developer',
+    tags: ['Flutter', 'Dart', 'Mobile App'],
+    thumbClass: 'thumb-5',
+    thumbSrc: 'assets/images/mymovies.png',
+    thumbIcon: 'fa-film',
+    problem: 'Pengguna membutuhkan aplikasi mobile yang cepat dan responsif untuk melihat daftar film terbaru dan jadwal tayangnya di bioskop seperti pengalaman pada m.tix.',
+    roleDesc: 'Mengembangkan aplikasi mobile dari awal menggunakan kerangka kerja Flutter, memastikan antarmuka pengguna yang mulus dan integrasi data API yang lancar.',
+    stack: ['Flutter', 'Dart', 'REST API'],
+    challenge: 'Menerapkan tata letak UI yang kompleks dan memastikan performa scrolling yang mulus saat memuat banyak gambar poster film dari server.',
+    impact: 'Menyediakan pengalaman pengguna yang intuitif dalam menelusuri katalog film dengan performa aplikasi yang ringan dan responsif.'
   }
 ];
 
